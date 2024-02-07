@@ -7,6 +7,43 @@
     font-family: Signika;
 
 }
+header .ad{
+    height: 58px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #519bfe;
+    color: white;
+}
+.ad a img{
+    height: 35px;
+}
+.ad .cross2{
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+.hide{
+    display: none;
+}
+header .ad h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* justify-content: space-around; */
+}
+header .ad{
+    position: relative;
+    
+}
+header .ad a{
+    background-color: transparent;
+    margin-left: 16px;
+    border: 0px;
+    display: flex;
+    justify-content: center;
+    
+}
 @keyframes harry1 {
     from {
          left: -501px;
@@ -21,6 +58,14 @@
     }
     to{
         left: -501px;
+    }
+}
+@keyframes harry3 {
+    from{
+        top: 0px;
+    }
+    to{
+        top: -36px;
     }
 }
 .navbarScroll li {

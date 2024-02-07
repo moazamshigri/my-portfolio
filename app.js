@@ -2,6 +2,7 @@ let logo = document.querySelector(".logo");
 let logoP = document.querySelector(".logoP");
 let header = document.querySelector("header");
 let cross = document.querySelector(".cross");
+let cross2 = document.querySelector(".cross2");
 let bars = document.querySelector(".bars");
 // logo.children[0].innerText = "</> DevMoazam";
 logo.children[0].style.fontFamily = "Poppins";
@@ -17,6 +18,7 @@ let searchWhole = document.querySelector(".whole");
 let searchWhole2 = document.querySelector(".whole2");
 let openBtn = document.querySelector(".open");
 let navParmanent = document.querySelector(".navbarPermanent");
+let fiverAd = document.querySelector(".ad");
 
 
 
@@ -52,34 +54,44 @@ cross.addEventListener("click", () =>{
     navParmanent.style.display = "";
 });
 
-search.addEventListener("click",()=>{
-    search.style.width = "189px";
-    searchbtn.classList.remove("hide");
-});
+// search.addEventListener("click",()=>{
+//     search.style.width = "189px";
+//     searchbtn.classList.remove("hide");
+// });
 
-search2.addEventListener("click",()=>{
-    search2.style.width = "189px";
-    searchbtn2.classList.remove("hide");
-});
+// search2.addEventListener("click",()=>{
+//     search2.style.width = "189px";
+//     searchbtn2.classList.remove("hide");
+// });
 
-function resetSearchWidth() {
-    search.style.width = ""; // Reset width to default (empty string)
-    searchbtn.classList.add("hide"); // Hide search button
-}
-function resetSearchWidth2() {
-    search2.style.width = ""; // Reset width to default (empty string)
-    searchbtn2.classList.add("hide"); // Hide search button
-}
+// function resetSearchWidth() {
+//     search.style.width = ""; // Reset width to default (empty string)
+//     searchbtn.classList.add("hide"); // Hide search button
+// }
+// function resetSearchWidth2() {
+//     search2.style.width = ""; // Reset width to default (empty string)
+//     searchbtn2.classList.add("hide"); // Hide search button
+// }
 
-document.addEventListener("click", (event) => {
-    var isClickInsideSearch = searchWhole.contains(event.target);
-    if (!isClickInsideSearch) {
-        resetSearchWidth(); // Reset search input width if clicked outside
-    }
-});
-document.addEventListener("click", (event) => {
-    var isClickInsideSearch = searchWhole2.contains(event.target);
-    if (!isClickInsideSearch) {
-        resetSearchWidth2(); // Reset search input width if clicked outside
-    }
-});
+// document.addEventListener("click", (event) => {
+//     var isClickInsideSearch = searchWhole.contains(event.target);
+//     if (!isClickInsideSearch) {
+//         resetSearchWidth(); // Reset search input width if clicked outside
+//     }
+// });
+// document.addEventListener("click", (event) => {
+//     var isClickInsideSearch = searchWhole2.contains(event.target);
+//     if (!isClickInsideSearch) {
+//         resetSearchWidth2(); // Reset search input width if clicked outside
+//     }
+// });
+cross2.addEventListener ("click",()=>{
+    // fiverAd.classList.add("hide");
+    fiverAd.style.animation="harry3 .2s" ;
+    fiverAd.style.transition = ".5s"
+    setTimeout(() => {
+        fiverAd.style.display = "none";
+        
+    }, 200);
+
+})
