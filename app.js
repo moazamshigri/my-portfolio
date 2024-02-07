@@ -29,7 +29,7 @@ openBtn.addEventListener("click",()=>{
     navScroll.style.width = "100vw";
     console.log("hello");
     navScroll.style.transition = ".5s"
-    navScroll.style.animation = "harry1 .5s forwards ease-in-out";
+    navScroll.style.animation = "harry1 .4s forwards ease-in-out";
 
     setTimeout(() => {
         navParmanent.classList.add("hide"); // Add "hide" class after a short delay
@@ -49,7 +49,7 @@ cross.addEventListener("click", () =>{
     setTimeout(() => {
         navScroll.classList.add("hide"); // Add "hide" class after a short delay
         
-    }, 500);
+    }, 300);
     // navScroll.classList.add("hide");
     navParmanent.style.display = "";
 });
@@ -87,7 +87,7 @@ cross.addEventListener("click", () =>{
 // });
 cross2.addEventListener ("click",()=>{
     // fiverAd.classList.add("hide");
-    fiverAd.style.animation="harry3 .2s" ;
+    fiverAd.style.animation="harry3 .4s" ;
     fiverAd.style.transition = ".5s"
     setTimeout(() => {
         fiverAd.style.display = "none";

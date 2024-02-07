@@ -27,6 +27,7 @@ header .ad{
     display: none;
 }
 header .ad h3{
+    width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,10 +40,19 @@ header .ad{
 header .ad a{
     background-color: transparent;
     /* margin-left: 16px; */
-    border: 0px;
     display: flex;
+    align-items: center;
+    height: 37px;
     justify-content: center;
+    width: 75px;
     
+    
+}
+.ad .cross2:hover{
+color: rgb(155, 155, 155);
+}
+.ad a img:hover{
+    height: 30px;
 }
 @keyframes harry1 {
     from {
@@ -55,17 +65,18 @@ header .ad a{
 }
 @keyframes harry2 {
     from{left: 0px;
+        
     }
     to{
-        left: -501px;
-    }
+        left: -1000px;
+            }
 }
 @keyframes harry3 {
     from{
         top: 0px;
     }
     to{
-        top: -36px;
+        top: -56px;
     }
 }
 .navbarScroll li {
@@ -296,5 +307,13 @@ transition: .5s;
         display: flex;
         justify-content: space-around;
         align-items: center;
+    }
+}
+@media (max-width:520px) {
+    .ad h3{
+        font-size: 15px;
+    }
+    .ad img{
+        height: 30px;
     }
 }
