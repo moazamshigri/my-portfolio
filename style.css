@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Signika;
+
+}
+@keyframes harry1 {
+    from {
+         left: -501px;
+    }
+
+    to {
+       left: 0px;
+    }
+}
+@keyframes harry2 {
+    from{left: 0px;
+    }
+    to{
+        left: -501px;
+    }
+}
+.navbarScroll li {
+    height: 34px;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;}
+
+
+.navbarScroll .whole3{
+    height: 60px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.navbarScroll a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbarPermanent .whole3{
+    display: flex;
+    width: 150px;
+    height: 100%;
+}
+.navbarPermanent .whole3 a{
+    height: 100%;
+    padding: 6px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.whole3{
+    /* height: 100%; */
+    display: flex;
+    width: 136px;
+    
+    
+}
+.whole3 a{
+height: 100%;
+padding: 6px;
+display: flex;
+}
+.whole3 a img:hover{
+    height: 33px;
+    transition: .1s;
+}
+.logoP{
+    display: flex;
+    /* background-image: url("logo.png"); */
+}
+.logoP img{
+    height: 104px;
+}
+.whole3 img{
+    height: 35px;
+}
+header{
+    width: 100vw;
+    height: auto;
+}
+.navbarScroll h1{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Signika;
+    
+
+}
+.navbarScroll {
+    min-width: 100vw;
+    max-width: auto;
+    height: 100vh;
+    background-color: rgb(60, 106, 159);
+    color: white;
+    display: flex;
+position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: width 0.5s ease-in-out;
+    
+}
+.navbarScroll a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+.navbarScroll li{
+    height: 34px;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+.navbarScroll a:hover{
+    color: rgb(199, 197, 197);
+}
+.searchbtn{
+    background-color: transparent;
+    font-size: 19px;
+    color: white;
+    border: none;
+    margin-left:12px ;
+transition: .5s;
+    cursor: pointer;
+}
+.search{
+    height: 32px;
+    width: 89px;
+    padding-left: 12px;
+    transition: .5s;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    height: 47vh;
+    justify-content: space-evenly;
+}
+.hide{
+    display: none;
+}
+.navbarScroll ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 135px;
+}
+.logo{
+    display: flex;
+}
+.logo .cross{
+    margin-left: 184px;
+}
+.cross{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.cross i:hover, .searchbtn i:hover{
+    color: rgb(171, 171, 171);
+    
+    /* color: #5F7FFF; */
+    }
+
+.navbarPermanent{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbarPermanent ul{
+    display: flex;
+}
+.navbarPermanent li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.navbarPermanent li a:hover{
+    color: rgb(135, 135, 135);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.navbarPermanent li{
+    list-style-type: none;
+}
+.searchbtn2{
+    color: black;
+    background-color: transparent;
+    font-size: 19px;
+    /* color: white; */
+    border: none;
+    margin-left:12px ;
+transition: .5s;
+    cursor: pointer;
+}
+.navbarPermanent ul {
+    display: flex;
+    width: 281px;
+    justify-content: space-evenly;
+}
+.open{
+    height: 31px;
+    width: 34px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width:769px) {
+    .navbarPermanent ul{
+        display: none;
+    }
+    .whole2{
+        display: none;
+    }
+    .open{
+        height: 31px;
+        width: 34px;
+        font-size: 20px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: inline-block;
+    }
+    .open i:hover{
+        color: rgb(116, 116, 116);
+    }
+    .navbarPermanent {
+        height: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
