@@ -20,8 +20,10 @@ header .ad{
 }
 .ad .cross2{
     font-size: 25px;
+    width: 8%;
     cursor: pointer;
     color: white;
+    text-align: center;
 }
 .hide{
     display: none;
@@ -47,6 +49,9 @@ header .ad a{
     width: 75px;
     
     
+}
+.ad h3{
+    font-size: 1rem;
 }
 .ad .cross2:hover{
 color: rgb(155, 155, 155);
@@ -311,7 +316,7 @@ transition: .5s;
 }
 @media (max-width:520px) {
     .ad h3{
-        font-size: 15px;
+        font-size: 13px;
     }
     .ad img{
         height: 30px;
