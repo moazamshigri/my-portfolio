@@ -38,7 +38,7 @@ header .ad{
 }
 header .ad a{
     background-color: transparent;
-    margin-left: 16px;
+    /* margin-left: 16px; */
     border: 0px;
     display: flex;
     justify-content: center;
