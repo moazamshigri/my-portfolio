@@ -46,7 +46,7 @@ cross.addEventListener("click", () =>{
     
     setTimeout(() => {
         navScroll.classList.add("hide"); // Add "hide" class after a short delay
-        navParmanent.classList.remove("hide");
+        
     }, 500);
     // navScroll.classList.add("hide");
     navParmanent.style.display = "";
