@@ -8,6 +8,7 @@
 
 }
 header .ad{
+    position: sticky;
     height: 58px;
     display: flex;
     justify-content: space-around;
@@ -163,6 +164,7 @@ header{
 }
 .navbarScroll {
     min-width: 100vw;
+    position: sticky;
     max-width: auto;
     height: 100vh;
     background-color: rgb(60, 106, 159);
@@ -289,7 +291,32 @@ transition: .5s;
     cursor: pointer;
     display: none;
 }
+
+/* main */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .welcome{
+    font-size: 14px;    font-size: 14px;
+    width: 90%;
+    align-items: center;
+    display: flex;
+    height: 130px;
+    
+}
+.welcome h1 .second{
+    color: #519bfe;
+}
+
+
+
 @media (max-width:769px) {
+    main .welcome{
+        font-size: 10px;
+        
+    }
     .navbarPermanent ul{
         display: none;
     }
@@ -316,6 +343,10 @@ transition: .5s;
     }
 }
 @media (max-width:520px) {
+    main .welcome{
+        font-size: 8px;
+        
+    }
     .ad h3{
         font-size: 13px;
     }
