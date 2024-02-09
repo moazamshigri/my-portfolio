@@ -356,8 +356,17 @@ main .welcome{
 }
 
 
-@media (max-width:984) {
+@media (max-width:984px) {
     .navbarPermanent ul{
         width: 45%;
     }
+}
+@media (max-width:411px) {
+    .welcome h1{
+        font-size: 3.5vw;
+    }
+    
+}
+.typed-cursor{
+    color: #519bfe;
 }
