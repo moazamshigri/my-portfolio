@@ -242,6 +242,7 @@ transition: .5s;
 
 .navbarPermanent{
     height: 100px;
+    position: sticky;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -276,7 +277,7 @@ transition: .5s;
 }
 .navbarPermanent ul {
     display: flex;
-    width: 281px;
+    width: 35%;
     justify-content: space-evenly;
 }
 .open{
@@ -320,5 +321,12 @@ transition: .5s;
     }
     .ad img{
         height: 30px;
+    }
+}
+
+
+@media (max-width:984) {
+    .navbarPermanent ul{
+        width: 45%;
     }
 }
