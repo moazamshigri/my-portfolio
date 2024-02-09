@@ -496,7 +496,7 @@ footer .first {
 }
 
 footer .first .logo img {
-width: 12%;
+    width: 12%;
 }
 
 footer .first .name {
@@ -507,62 +507,74 @@ footer .first .name {
 footer .first .name h2 {
     font-family: Poppins;
 }
-footer .list ul li{
+
+footer .list ul li {
     list-style: none;
 
 }
-footer ul{
+
+footer ul {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
 
 }
-footer .list{
-    width: 20%;
+
+footer .list {
+    width: 35%;
 }
-footer ul li a{
+
+footer ul li a {
     text-decoration: none;
     color: white;
 }
-footer ul li a:hover{
+
+footer ul li a:hover {
     color: #519bfe;
 }
-footer .pre{
+
+footer .pre {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 151px;
 }
-.hr{
+
+.hr {
     width: 100%;
     height: 29px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.hr hr{
+
+.hr hr {
     width: 90%;
     color: white;
 
 }
 
-footer .second{
+footer .second {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 119px;
 }
-footer .second a{
+
+footer .second a {
     color: white;
 }
-footer .second a:hover{
+
+footer .second a:hover {
     color: rgb(66, 66, 241);
 }
-footer .icon:hover{
-cursor: pointer;
-color: rgb(98, 98, 98);
+
+footer .icon:hover {
+    cursor: pointer;
+    color: rgb(98, 98, 98);
 }
-footer .icons{
+
+footer .icons {
     display: flex;
     width: 33.33%;
 
@@ -571,20 +583,60 @@ footer .icons{
 }
 
 
-footer .one{
+footer .one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33.33%;
+}
+
+footer .two {
     display: flex;
     align-items: center;
     justify-content: center;
 
     width: 33.33%;
 }
-footer .two{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    width: 33.33%;
-}
-.ic{
+
+.ic {
     width: 25px;
+}
+
+@media (max-width:800px) {
+    footer .first .name h2 {
+        font-family: Poppins;
+        font-size: 12px;
+    }
+
+    footer .list {
+        width: 35%;
+        font-size: 11px;
+    }
+
+    footer .list {
+        width: 50%;
+        font-size: 11px;
+    }
+    footer .second {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 119px;
+        width: 100%;
+        height: 40vh;
+    }
+    footer .one {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    footer .two{
+        width: 100%;
+    }
+    footer .icons{
+        width: 100%;
+    }
 }
