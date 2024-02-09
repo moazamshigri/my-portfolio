@@ -297,25 +297,52 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 main .welcome{
+
     font-size: 14px;    font-size: 14px;
     width: 90%;
     align-items: center;
     display: flex;
-    height: 130px;
-    
+    height: auto;
+flex-direction: column;    
+
+}
+.welcome h1{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 .welcome h1 .second{
     color: #519bfe;
 }
+.welcome .paragraph{
+    width: 100%;
+    text-align: justify;
+    line-height: 26px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.welcome .paragraph p{
+    width: 81%;
+    font-size: 15px;
+}
 
+.typed-cursor{
+    color: #519bfe;
+}
 
 
 @media (max-width:769px) {
     main .welcome{
         font-size: 10px;
         
+    }
+    .welcome .paragraph p{
+        width: 81%;
+        font-size: 12px;
     }
     .navbarPermanent ul{
         display: none;
@@ -365,8 +392,9 @@ main .welcome{
     .welcome h1{
         font-size: 3.5vw;
     }
+    .welcome .paragraph p{
+        width: 81%;
+        font-size: 12px;
+    }
     
-}
-.typed-cursor{
-    color: #519bfe;
-}
+};
