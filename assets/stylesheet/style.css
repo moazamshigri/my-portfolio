@@ -1,13 +1,47 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-*{
+
+
+* {
     margin: 0;
     padding: 0;
     font-family: Signika;
 
 }
-header .ad{
+
+@keyframes harry1 {
+    from {
+        left: -501px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes harry2 {
+    from {
+        left: 0px;
+
+    }
+
+    to {
+        left: -1000px;
+    }
+}
+
+@keyframes harry3 {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: -56px;
+    }
+}
+
+
+header .ad {
     position: sticky;
     height: 58px;
     display: flex;
@@ -16,31 +50,37 @@ header .ad{
     background-color: #519bfe;
     color: white;
 }
-.ad a img{
+
+.ad a img {
     height: 35px;
 }
-.ad .cross2{
+
+.ad .cross2 {
     font-size: 25px;
     width: 8%;
     cursor: pointer;
     color: white;
     text-align: center;
 }
-.hide{
+
+.hide {
     display: none;
 }
-header .ad h3{
+
+header .ad h3 {
     width: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
     /* justify-content: space-around; */
 }
-header .ad{
+
+header .ad {
     position: relative;
-    
+
 }
-header .ad a{
+
+header .ad a {
     background-color: transparent;
     /* margin-left: 16px; */
     display: flex;
@@ -48,43 +88,23 @@ header .ad a{
     height: 37px;
     justify-content: center;
     width: 75px;
-    
-    
+
+
 }
-.ad h3{
+
+.ad h3 {
     font-size: 1rem;
 }
-.ad .cross2:hover{
-color: rgb(155, 155, 155);
+
+.ad .cross2:hover {
+    color: rgb(155, 155, 155);
 }
-.ad a img:hover{
+
+.ad a img:hover {
     height: 30px;
 }
-@keyframes harry1 {
-    from {
-         left: -501px;
-    }
 
-    to {
-       left: 0px;
-    }
-}
-@keyframes harry2 {
-    from{left: 0px;
-        
-    }
-    to{
-        left: -1000px;
-            }
-}
-@keyframes harry3 {
-    from{
-        top: 0px;
-    }
-    to{
-        top: -56px;
-    }
-}
+
 .navbarScroll li {
     height: 34px;
     list-style: none;
@@ -92,17 +112,19 @@ color: rgb(155, 155, 155);
     width: 100%;
     display: flex;
     /* align-items: center; */
-    justify-content: center;}
+    justify-content: center;
+}
 
 
-.navbarScroll .whole3{
+.navbarScroll .whole3 {
     height: 60px;
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: center;
 }
-.navbarScroll a{
+
+.navbarScroll a {
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -112,12 +134,14 @@ color: rgb(155, 155, 155);
     justify-content: center;
     align-items: center;
 }
-.navbarPermanent .whole3{
+
+.navbarPermanent .whole3 {
     display: flex;
     width: 150px;
     height: 100%;
 }
-.navbarPermanent .whole3 a{
+
+.navbarPermanent .whole3 a {
     height: 100%;
     padding: 6px;
     display: flex;
@@ -125,43 +149,52 @@ color: rgb(155, 155, 155);
     align-items: center;
     justify-content: center;
 }
-.whole3{
+
+.whole3 {
     /* height: 100%; */
     display: flex;
     width: 136px;
-    
-    
+
+
 }
-.whole3 a{
-height: 100%;
-padding: 6px;
-display: flex;
+
+.whole3 a {
+    height: 100%;
+    padding: 6px;
+    display: flex;
 }
-.whole3 a img:hover{
+
+.whole3 a img:hover {
     height: 33px;
     transition: .1s;
 }
-.logoP{
+
+.logoP {
     display: flex;
     /* background-image: url("logo.png"); */
 }
-.logoP img{
+
+.logoP img {
     height: 104px;
 }
-.whole3 img{
+
+.whole3 img {
     height: 35px;
 }
-header{
+
+header {
     width: 100vw;
     height: auto;
 }
-.navbarScroll h1{
+
+.navbarScroll h1 {
     font-size: 22px;
     font-weight: bold;
     font-family: Signika;
-    
+
 
 }
+
 .navbarScroll {
     min-width: 100vw;
     position: sticky;
@@ -170,119 +203,139 @@ header{
     background-color: rgb(60, 106, 159);
     color: white;
     display: flex;
-position: relative;
+    position: relative;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     transition: width 0.5s ease-in-out;
-    
+
 }
-.navbarScroll a{
+
+.navbarScroll a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
 
 }
-.navbarScroll li{
+
+.navbarScroll li {
     height: 34px;
     list-style: none;
     text-align: left;
     width: 100%;
 }
-.navbarScroll a:hover{
+
+.navbarScroll a:hover {
     color: rgb(199, 197, 197);
 }
-.searchbtn{
+
+.searchbtn {
     background-color: transparent;
     font-size: 19px;
     color: white;
     border: none;
-    margin-left:12px ;
-transition: .5s;
+    margin-left: 12px;
+    transition: .5s;
     cursor: pointer;
 }
-.search{
+
+.search {
     height: 32px;
     width: 89px;
     padding-left: 12px;
     transition: .5s;
 }
-.items{
+
+.items {
     display: flex;
     flex-direction: column;
     height: 47vh;
     justify-content: space-evenly;
 }
-.hide{
+
+.hide {
     display: none;
 }
-.navbarScroll ul{
+
+.navbarScroll ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 135px;
 }
-.logo{
+
+.logo {
     display: flex;
 }
-.logo .cross{
+
+.logo .cross {
     margin-left: 184px;
 }
-.cross{
+
+.cross {
     background-color: transparent;
     border: none;
     color: white;
     font-size: 30px;
     cursor: pointer;
 }
-.cross i:hover, .searchbtn i:hover{
-    color: rgb(171, 171, 171);
-    
-    /* color: #5F7FFF; */
-    }
 
-.navbarPermanent{
+.cross i:hover,
+.searchbtn i:hover {
+    color: rgb(171, 171, 171);
+
+    /* color: #5F7FFF; */
+}
+
+.navbarPermanent {
     height: 100px;
     position: sticky;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.navbarPermanent ul{
+
+.navbarPermanent ul {
     display: flex;
 }
-.navbarPermanent li a{
+
+.navbarPermanent li a {
     color: black;
     text-decoration: none;
     font-weight: bold;
 
 }
-.navbarPermanent li a:hover{
+
+.navbarPermanent li a:hover {
     color: rgb(135, 135, 135);
     text-decoration: none;
     font-weight: bold;
 
 }
-.navbarPermanent li{
+
+.navbarPermanent li {
     list-style-type: none;
 }
-.searchbtn2{
+
+.searchbtn2 {
     color: black;
     background-color: transparent;
     font-size: 19px;
     /* color: white; */
     border: none;
-    margin-left:12px ;
-transition: .5s;
+    margin-left: 12px;
+    transition: .5s;
     cursor: pointer;
 }
+
 .navbarPermanent ul {
     display: flex;
     width: 35%;
     justify-content: space-evenly;
 }
-.open{
+
+.open {
     height: 31px;
     width: 34px;
     font-size: 20px;
@@ -292,65 +345,78 @@ transition: .5s;
     display: none;
 }
 
-/* main */
+/* ......................................main.............................. */
+/* ........................................................................... */
 main {
     display: flex;
+    min-height: 83vh;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 
 }
-main .welcome{
 
-    font-size: 14px;    font-size: 14px;
+main .welcome {
+
+    font-size: 14px;
+    font-size: 14px;
     width: 90%;
     align-items: center;
     display: flex;
     height: auto;
-flex-direction: column;    
+    flex-direction: column;
 
 }
-.welcome h1{
+
+.welcome h1 {
     height: 80px;
     width: 100%;
     display: flex;
     align-items: center;
 }
-.welcome h1 .second{
+
+.welcome h1 .second {
     color: #519bfe;
 }
-.welcome .paragraph{
+
+.welcome .paragraph {
     width: 100%;
     text-align: justify;
     line-height: 26px;
     font-weight: 600;
     font-size: 14px;
 }
-.welcome .paragraph p{
+
+.welcome .paragraph p {
     width: 81%;
     font-size: 15px;
+    font-weight: 700;
 }
 
-.typed-cursor{
+.typed-cursor {
     color: #519bfe;
 }
 
 
 @media (max-width:769px) {
-    main .welcome{
+    main .welcome {
         font-size: 10px;
-        
+
     }
-    .welcome .paragraph p{
+
+    .welcome .paragraph p {
         width: 81%;
         font-size: 12px;
     }
-    .navbarPermanent ul{
+
+    .navbarPermanent ul {
         display: none;
     }
-    .whole2{
+
+    .whole2 {
         display: none;
     }
-    .open{
+
+    .open {
         height: 31px;
         width: 34px;
         font-size: 20px;
@@ -359,9 +425,11 @@ flex-direction: column;
         cursor: pointer;
         display: inline-block;
     }
-    .open i:hover{
+
+    .open i:hover {
         color: rgb(116, 116, 116);
     }
+
     .navbarPermanent {
         height: 100px;
         display: flex;
@@ -369,32 +437,133 @@ flex-direction: column;
         align-items: center;
     }
 }
+
 @media (max-width:520px) {
-    main .welcome{
+    main .welcome {
         font-size: 8px;
-        
+
     }
-    .ad h3{
+
+    .ad h3 {
         font-size: 13px;
     }
-    .ad img{
+
+    .ad img {
         height: 30px;
     }
 }
 
 
 @media (max-width:984px) {
-    .navbarPermanent ul{
+    .navbarPermanent ul {
         width: 45%;
     }
 }
+
 @media (max-width:411px) {
-    .welcome h1{
+    .welcome h1 {
         font-size: 3.5vw;
     }
-    .welcome .paragraph p{
+
+    .welcome .paragraph p {
         width: 81%;
         font-size: 12px;
     }
-    
-};
+
+}
+
+footer {
+    background-color: #191C25;
+    width: 100%;
+    color: white;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .first {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    height: 66px;
+    justify-content: space-between;
+}
+
+footer .first .logo img {
+width: 12%;
+}
+
+footer .first .name {
+    font-family: Poppins;
+    font-size: 12px;
+}
+
+footer .first .name h2 {
+    font-family: Poppins;
+}
+footer .list ul li{
+    list-style: none;
+
+}
+footer ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+footer .list{
+    width: 20%;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover{
+    color: #519bfe;
+}
+footer .pre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 151px;
+}
+.hr{
+    width: 100%;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hr hr{
+    width: 90%;
+    color: white;
+
+}
+
+footer .second{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 119px;
+}
+footer .second a{
+    color: white;
+}
+footer .second a:hover{
+    color: rgb(66, 66, 241);
+}
+footer .icon:hover{
+cursor: pointer;
+color: rgb(98, 98, 98);
+}
+footer .icons{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+}

@@ -20,7 +20,9 @@ let openBtn = document.querySelector(".open");
 let navParmanent = document.querySelector(".navbarPermanent");
 let fiverAd = document.querySelector(".ad");
 
-
+let myName = document.querySelector(".name");
+// myName.childern[0].innerText = "</Dev> Moazam";
+myName.children[0].innerText = "</dev> Moazam";
 
 openBtn.addEventListener("click",()=>{
     navScroll.classList.remove("hide"); // Add "hide" class after a short delay
