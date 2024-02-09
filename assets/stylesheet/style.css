@@ -564,6 +564,27 @@ color: rgb(98, 98, 98);
 }
 footer .icons{
     display: flex;
-    width: 10%;
-    justify-content: space-around;
+    width: 33.33%;
+
+    justify-content: center;
+
+}
+
+
+footer .one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 33.33%;
+}
+footer .two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 33.33%;
+}
+.ic{
+    width: 25px;
 }
