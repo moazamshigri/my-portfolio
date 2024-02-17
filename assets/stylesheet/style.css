@@ -360,21 +360,27 @@ main .welcome {
     font-size: 14px;
     font-size: 14px;
     width: 90%;
-    align-items: center;
-    display: flex;
-    height: auto;
+    /* align-items: center; */
     flex-direction: column;
-
+    display: flex;
+    height: 55vh;
+    justify-content: center;
 }
+
+
 
 .welcome h1 {
-    height: 80px;
+    /* height: 200px;
+     */
+     margin-top: 40px;
     width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
 }
 
-.welcome h1 .second {
+.welcome h1 .sec2 {
     color: #519bfe;
 }
 
@@ -390,13 +396,46 @@ main .welcome {
     width: 81%;
     font-size: 15px;
     font-weight: 700;
+    margin-top: 21px ;
+
 }
 
 .typed-cursor {
     color: #519bfe;
 }
+.welcome #explore{
+    float: right;
+    width: 87px;
+    height: 28px;
+    font-weight: bold;
+    color: white;
+    background: #519bfe;
+    border: 0px;
+    border-radius: 5px;
+/* margin-top: 38px; */
+    cursor: pointer;
 
+}
+.welcome #explore:hover{
+    background-color: #3b8cf5;
+}
+.welcome .icons{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    height: 48px;
+    margin-top: 20px 
+}
+.welcome .icon{
+    color: black;
+}
+.welcome .icon:hover{
+    color: #6788f1;
+}
 
+.welcomeImg{
+    background-image: url('assets/images/img 1.png');
+}
 @media (max-width:769px) {
     main .welcome {
         font-size: 10px;
@@ -440,9 +479,10 @@ main .welcome {
 
 @media (max-width:520px) {
     main .welcome {
-        font-size: 8px;
-
+        font-size: 10px;
     }
+       
+
 
     .ad h3 {
         font-size: 13px;
