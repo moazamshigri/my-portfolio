@@ -363,6 +363,7 @@ main .welcome {
     display: flex;
     height: 66vh;
     padding-top: 40px;
+    min-height: 80vh;
 }
 
 
@@ -401,7 +402,7 @@ main .welcome {
 .typed-cursor {
     color: #519bfe;
 }
-.welcome #explore{
+.welcome  #explore{
     float: right;
     width: 87px;
     height: 28px;
@@ -414,7 +415,22 @@ main .welcome {
     cursor: pointer;
 
 }
-.welcome #explore:hover{
+.welcome #explore button{
+    
+    width: 87px;
+    height: 28px;
+    font-weight: bold;
+    color: white;
+    background: #519bfe;
+    border: 0px;
+    border-radius: 5px;
+/* margin-top: 38px; */
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.welcome #explore button:hover{
     background-color: #3b8cf5;
 }
 .welcome .icons{
@@ -453,6 +469,36 @@ main .firstSection p{
 }
 main .firstSection .content{
     width: 90%;
+}
+main .firstSection .boxes{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+main .content h3{
+    text-decoration: underline;
+}
+main .content .education{
+    margin: 21px 0px;
+}
+main .boxes .box{
+    width: 25%;
+    padding: 21px 0;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .boxes .box img{
+    height: 90%
+}
+main .jagas{
+    display: flex;
+    flex-wrap: wrap;
+}
+main .jaga{
+    width: 70%;
 }
 
 @media (max-width:769px) {
@@ -663,6 +709,10 @@ footer .two {
 }
 
 @media (max-width:800px) {
+    main .firstSection p {
+        width: 100%;
+        text-align: justify;
+    }
     footer .first .name h2 {
         font-family: Poppins;
         font-size: 12px;

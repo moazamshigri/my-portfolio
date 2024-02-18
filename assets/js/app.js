@@ -19,7 +19,9 @@ let searchWhole2 = document.querySelector(".whole2");
 let openBtn = document.querySelector(".open");
 let navParmanent = document.querySelector(".navbarPermanent");
 let fiverAd = document.querySelector(".ad");
-
+let exploreButton = document.querySelector("#explore");
+let aboutSection = document.querySelector('#About');
+let otherAbout = document.querySelectorAll(".about");
 let myName = document.querySelector(".name");
 // myName.childern[0].innerText = "</Dev> Moazam";
 myName.children[0].innerText = "</dev> Moazam";
@@ -96,4 +98,21 @@ cross2.addEventListener ("click",()=>{
         
     }, 200);
 
-})
+});
+
+otherAbout.forEach( (about) =>{
+    about.addEventListener('click',(e)=>{
+        e.preventDefault();
+        aboutSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+        })
+});
+
+
+exploreButton.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    aboutSection.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
