@@ -496,9 +496,32 @@ main .boxes .box img{
 main .jagas{
     display: flex;
     flex-wrap: wrap;
+    margin: 24px 0
+   
+}
+main .jagas a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }
 main .jaga{
-    width: 70%;
+   
+    height: 154px;
+    background-color: #fafafa;
+    display: flex;
+    width: 45%;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 1px 0px 11px -4px;
+}
+main .jaga img{
+    height: 100%;
+}
+main .jaga h3{
+    text-decoration: none;
 }
 
 @media (max-width:769px) {
