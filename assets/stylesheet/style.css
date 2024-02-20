@@ -496,7 +496,8 @@ main .boxes .box img{
 main .jagas{
     display: flex;
     flex-wrap: wrap;
-    margin: 24px 0
+    margin: 24px 0;
+    /* justify-content: space-evenly; */
    
 }
 main .jagas a{
@@ -508,11 +509,11 @@ main .jagas a{
     cursor: pointer;
 }
 main .jaga{
-   
+    margin: 15px 20px;
     height: 154px;
     background-color: #fafafa;
     display: flex;
-    width: 45%;
+    width: 40%;
     align-items: center;
     border-radius: 8px;
     box-shadow: 1px 0px 11px -4px;
