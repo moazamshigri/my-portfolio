@@ -316,7 +316,11 @@ header {
 .def_hover_cursor:hover{
     cursor: pointer;
 }
+.aboutsection{
+    background: #f1f0ee;
+}
 .abouttailwind{
+    
     font-family: Signika !important;
     width: 28%;
     align-items: center;

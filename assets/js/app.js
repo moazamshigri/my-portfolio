@@ -26,6 +26,9 @@ let myName = document.querySelector(".name");
 
 let contactSection = document.querySelector('#contact');
 let contact = document.querySelectorAll(".contact");
+
+let learnmore = document.querySelector('.learnmore');
+let learnhere = document.querySelector("#learnhere");
 // myName.childern[0].innerText = "</Dev> Moazam";
 myName.children[0].innerText = "</dev> Moazam";
 
@@ -127,14 +130,7 @@ exploreButton.addEventListener('click', function(e) {
 
 
 
-otherAbout.forEach( (about) =>{
-    about.addEventListener('click',(e)=>{
-        e.preventDefault();
-        aboutSection.scrollIntoView({
-            behavior: 'smooth'
-        });
-        })
-});
+
 
 contact.forEach((contact) => {
     contact.addEventListener('click', function(e) {
@@ -146,4 +142,14 @@ contact.forEach((contact) => {
   
 }
 );
+
+
+learnmore.addEventListener('click', function(e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    learnhere.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+  
+
 
