@@ -20,9 +20,12 @@ let openBtn = document.querySelector(".open");
 let navParmanent = document.querySelector(".navbarPermanent");
 let fiverAd = document.querySelector(".ad");
 let exploreButton = document.querySelector("#explore");
-let aboutSection = document.querySelector('#About');
+let aboutSection = document.querySelector('._merimarzi_');
 let otherAbout = document.querySelectorAll(".about");
 let myName = document.querySelector(".name");
+
+let contactSection = document.querySelector('#contact');
+let contact = document.querySelectorAll(".contact");
 // myName.childern[0].innerText = "</Dev> Moazam";
 myName.children[0].innerText = "</dev> Moazam";
 
@@ -116,3 +119,31 @@ exploreButton.addEventListener('click', function(e) {
         behavior: 'smooth'
     });
 });
+
+
+
+
+
+
+
+
+otherAbout.forEach( (about) =>{
+    about.addEventListener('click',(e)=>{
+        e.preventDefault();
+        aboutSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+        })
+});
+
+contact.forEach((contact) => {
+    contact.addEventListener('click', function(e) {
+        e.preventDefault(); // Prevent default anchor behavior
+        contactSection.scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+  
+}
+);
+

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
 </head>
 
@@ -31,14 +33,14 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a class="about" href="#About">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a style="cursor: pointer;" class="contact">Contact us</a></li>
 
                 </ul>
                 <div class="whole">
                     <!-- <input type="text" placeholder="Search here" class="search"> <button class="searchbtn hide"><i class="fa-solid fa-magnifying-glass "></i></button> -->
                     <div class="whole3"><a target="_blank" href="https://www.buymeacoffee.com/moazamshigri"><img
-                                src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt=""></a></div>
+                                src="assets/images/buy me a coffee.png" alt=""></a></div>
 
                 </div>
             </div>
@@ -53,13 +55,13 @@
                 <li><a class="about" href="#About">About us</a></li>
                 <li><a href="#">Services</a></li>
 
-                <li><a href="#">Contact us</a></li>
+                <li><a style="cursor: pointer;"  class="contact">Contact us</a></li>
 
             </ul>
             <div class="whole2">
                 <!-- <input type="text" placeholder="Search here" class="search2 search"> <button class="searchbtn2  hide"><i class="fa-solid fa-magnifying-glass "></i></button> -->
                 <div class="whole3"><a target="_blank" href="https://www.buymeacoffee.com/moazamshigri"><img
-                            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt=""></a></div>
+                            src="assets/images/buy me a coffee.png" alt=""></a></div>
 
             </div>
 
@@ -93,65 +95,76 @@
             </div>
             <a href="#About" id="explore" style="color: white;""><button>Explore</button></a>
         </div>
-        
-        <section class=" firstSection" id="About">
-                <div class="content">
-
-                    <h1>About</h1>
-                    <div class="education">
-                        <h3>Hi!</h3>
-                        <p>I'm Moazam, a passionate Software Engineering student at <a
-                                href="https://www.comsats.edu.pk/" target="_blank">COMSATS University Islamabad</a>,
-                            Pakistan, where I'm honing my skills to become a proficient developer. With a solid academic
-                            background, including top grades in both intermediate and matriculation, I'm dedicated to
-                            excellence in everything I pursue.</p>
-                    </div>
-                    <div class="skills">
-                        <h3>My skills</h3>
-                        <div class="boxes">
-                            <div class="box1 box"><img src="assets/images/python.png" alt=""></div>
-                            <div class="box2 box"><img src="assets/images/flask.png" alt=""></div>
-                            <div class="box2 box"><img src="assets/images/JavaScript-logo.png" alt=""></div>
-                            <div class="box2 box"><img src="assets/images/mysql.png" alt=""></div>
-                            <div class="box2 box"><img
-                                    src="assets/images/4202020_css3_html_logo_social_social media_icon.png" alt="">
-                            </div>
-                            <div class="box2 box"><img src="assets/images/html.png" alt=""></div>
-                            <div class="box2 box"><img src="assets/images/react.png" alt=""></div>
-                        </div>
-                    </div>
-                    <div class="portfolio">
-                        <h3>Portfolio</h3>
-                        <div class="jagas">
-
-
-                            <div class="jaga netflix">
-                                <a href="#"><img src="assets/images/netflix.png" alt="">
-                                    <h3>Netflix Clone</h3>
-                                </a>
-
-
-                            </div>
-                            <div class="jaga Tick-Cross">
-                                <a href="#"><img src="assets/images/tickcross.png" alt="">
-                                    <h3>Tick Cross Game</h3>
-                                </a>
-
-
-                            </div>
-                            <div class="jaga rock-paper-scissor">
-                                <a href="#"><img src="assets/images/rock.png" alt="">
-                                    <h3>Rock Paper Scissor</h3>
-                                </a>
-
-
-                            </div>
-
-                        </div>
-                    </div>
+        <section class="text-gray-600 body-font _merimarzi_" >
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+              <h2 class=" abouttailwind sm:text-3xl text-2xl text-gray-900 font-medium title-font mb-2">About</h2>
+              <div class="md:w-3/5 md:pl-6">
+                <p class="leading-relaxed text-base">I'm Moazam, a passionate Software Engineering student at COMSATS University Islamabad, Pakistan, where I'm honing my skills to become a proficient developer. With a solid academic background, including top grades in both intermediate and matriculation, I'm dedicated to excellence in everything I pursue.</p>
+                <div class="flex md:mt-4 mt-6">
+                    
+                        <button class="inline-flex text-white bg-indigo-500 border-0 py-1 px-4 focus:outline-none hover:bg-indigo-600 rounded def_blue contact">Contact Us</button>
+                    
+                  
+                  <a class="text-indigo-500 inline-flex items-center ml-4 def_hover_cursor">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                      <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                  </a>
                 </div>
+              </div>
+            </div>
+        </section>
 
-                </section>
+        <section class="text-gray-600 body-font relative " id="contact">
+            <div class="container px-5 py-24 mx-auto">
+              <div class="flex flex-col text-center w-full mb-12">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Drop a Feedback if you like our Work</p>
+              </div>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                      <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                      <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <div class="relative">
+                      <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                      <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                    </div>
+                  </div>
+                  <div class="p-2 w-full">
+                    <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg def_blue">Submit</button>
+                  </div>
+                  <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                    <a class="text-indigo-500">muhammadmoazzamshigri@gmail.com</a>
+                    <p class="leading-normal my-5">University Road
+                      <br> Abbottabad, Khyber Pakhtunkhwa 22060
+                    </p>
+                    <div class="icons flex_">
+                        <div class="fb ic"><a target="_blank" href="https://web.facebook.com/profile.php?id=100089841996823"><i
+                                    class="fa-brands fa-facebook"></i></a></div>
+                        <div class=" ic github"><a target="_blank" href="https://github.com/moazamshigri"><i
+                                    class=" icon fa-brands fa-github"></i></a></div>
+                        <div class="link ic"><a href="https://www.linkedin.com/in/m-moazam-a8b0ab264/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        
+        
     </main>
 
     <footer>
@@ -165,7 +178,7 @@
             <span class="list">
                 <ul>
                     <li><a class="about" href="#About">About us </a></li>
-                    <li><a href="#">Contact us </a></li>
+                    <li><a style="cursor: pointer;" class="contact">Contact us </a></li>
                     <li><a href="#"></a></li>
                 </ul>
             </span>
@@ -209,7 +222,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('.sec2', {
-            strings: [" Web Developer", "Digital Marketing Expert", " Web Developer", "Digital Marketing Expert", " Web Developer", "Digital Marketing Expert", " Web Developer", "Digital Marketing Expert", " Web Developer", "Digital Marketing Expert", " Web Developer", "Digital Marketing Expert"],
+            strings: ["  Software Engineer", " Block Chain Developer", " Data Engineer", " AI / ML Expert"," Software Engineer", " Block Chain Developer", " Data Engineer", " AI / ML Expert"," Software Engineer", " Block Chain Developer", " Data Engineer", " AI / ML Expert"," Software Engineer", " Block Chain Developer", " Data Engineer", " AI / ML Expert"," Software Engineer", " Block Chain Developer", " Data Engineer", " AI / ML Expert"," Software Engineer", " Block Chain Developer", " Data Engineer", " AI / ML Expert" ],
             typeSpeed: 100,
             backSpeed: 100,
             loop: true

@@ -180,6 +180,7 @@ header .ad a {
 
 .whole3 img {
     height: 35px;
+    border-radius: 3px;
 }
 
 header {
@@ -306,7 +307,22 @@ header {
     font-weight: bold;
 
 }
-
+.def_blue{
+    background-color: #3b8cf5 !important;
+}
+.def_blue:hover{
+    background-color: #6788f1 !important;
+}
+.def_hover_cursor:hover{
+    cursor: pointer;
+}
+.abouttailwind{
+    font-family: Signika !important;
+    width: 28%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 .navbarPermanent li a:hover {
     color: rgb(135, 135, 135);
     text-decoration: none;
@@ -317,6 +333,7 @@ header {
 .navbarPermanent li {
     list-style-type: none;
 }
+
 
 .searchbtn2 {
     color: black;
@@ -365,13 +382,18 @@ main .welcome {
     padding-top: 40px;
     min-height: 80vh;
 }
+.welcome h1{
+   
+    font-size: 25px;
+    font-weight: bold;
+}
 
 
 
 .welcome h1 {
     /* height: 200px;
      */
-     margin-top: 40px;
+    margin-top: 40px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -526,6 +548,9 @@ main .jaga h3{
 }
 
 @media (max-width:769px) {
+    .abouttailwind{
+        display: inline-block;
+    }
     main .welcome {
         font-size: 10px;
 
@@ -591,7 +616,7 @@ main .jaga h3{
 
 @media (max-width:411px) {
     .welcome h1 {
-        font-size: 3.5vw;
+        font-size: 24px;
     }
 
     .welcome .paragraph p {
@@ -772,4 +797,19 @@ footer .two {
     footer .icons{
         width: 100%;
     }
+}
+
+
+.flex_{
+    display: flex;
+    justify-content: center;
+}
+.fb :hover{
+color: rgb(58, 58, 191);
+}
+.fa-linkedin:hover{
+color: rgb(62, 62, 178);
+}
+.github:hover{
+color: rgb(77, 77, 80);
 }
