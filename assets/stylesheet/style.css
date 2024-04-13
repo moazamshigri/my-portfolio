@@ -379,6 +379,7 @@ main {
 main .welcome {
 
     font-size: 14px;
+    justify-content: center;
     width: 90%;
     flex-direction: column;
     display: flex;
@@ -395,14 +396,12 @@ main .welcome {
 
 
 .welcome h1 {
-    /* height: 200px;
-     */
-    margin-top: 40px;
+    height: 82px;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .welcome h1 .sec2 {
@@ -411,6 +410,7 @@ main .welcome {
 
 .welcome .paragraph {
     width: 100%;
+    margin-top: 23px;
     text-align: justify;
     line-height: 26px;
     font-weight: 600;
