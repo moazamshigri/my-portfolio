@@ -290,6 +290,7 @@ header {
 }
 
 .navbarPermanent {
+   background-color:  rgb(60 106 159);
     height: 100px;
     position: sticky;
     display: flex;
@@ -373,19 +374,25 @@ main {
     min-height: auto;
     flex-direction: column;
     align-items: center;
+    
 
 }
 
 main .welcome {
-
+    padding-left: 61px;
+    background-image: url("../images/White\ &\ Navy\ Futuristic\ Technology\ Facebook\ Cover.png");
     font-size: 14px;
     justify-content: center;
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     display: flex;
     height: 66vh;
     padding-top: 40px;
     min-height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
 }
 .welcome h1{
    
